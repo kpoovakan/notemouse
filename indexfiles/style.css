@@ -2,8 +2,12 @@
     --colorBackground: #EBEBEB;
     --colorForeground: #1F1F1F;
     --colorAccent: #523500;
+    --font: "Share Tech", sans-serif;
 }
 body {
     background-color: var(--colorBackground);
     color: var(--colorForeground);
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 400;
 }
