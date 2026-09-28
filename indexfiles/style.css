@@ -10,19 +10,22 @@ body {
     font-family: var(--font);
     font-style: normal;
     font-weight: 400;
-    margin: 31px;
     padding: 0;
+    margin: 0 31px;
     display: block;
+    box-sizing: border-box;
 }
 .textarea {
     background-color: var(--colorBackground);
     color: var(--colorForeground);
     font-family: var(--font);
     border-radius: 3px;
-    border: 1px solid var(--colorForeground);
-    outline: none;
+    outline: 1px solid var(--colorForeground);
+    border: none;
     padding: 13px;
     width: 100%;
+    min-height: 85vh;
+    margin: 0;
     box-sizing: border-box;
 }
 .textarea:empty::before {
@@ -31,6 +34,12 @@ body {
     color: color-mix(in oklab, #ffffff00 50%, var(--colorForeground));
 }
 
+h1 {
+    font-size: 6vh;
+    margin: 2vh 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .ad {
     a:link, a:visited {
         text-decoration: none;
