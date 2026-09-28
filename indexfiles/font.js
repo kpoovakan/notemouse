@@ -22,6 +22,6 @@ function setFont(font) {
 function useFont(font) {
     if (typeof font !== "number") return;
     const toSet = fonts[font];
-    console.log(toSet);
+    //console.log(toSet);
     document.documentElement.style.setProperty("--font", toSet);
 }
