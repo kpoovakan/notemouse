@@ -13,6 +13,9 @@ document.addEventListener("focusin", (e) => {
         textarea.focus();
     }
 }, true);
+document.addEventListener("click", function() {
+    textarea.focus();
+});
 
 document.addEventListener("keydown", function(e) {
     if (!(e.ctrlKey || e.metaKey)) return;
@@ -45,6 +48,8 @@ document.addEventListener("keydown", function(e) {
             setTheme("light")
         }
     }
+    window.focus();
+    textarea.focus();
 });
 
 function downloadAsFile(content, filename, contentType = "text/plain") {
