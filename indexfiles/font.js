@@ -8,14 +8,14 @@ const fonts = [
 ];
 
 window.addEventListener("load", function() {
-    var font = window.localStorage.getItem("font");
+    var font = window.localStorage.getItem("notemouseFont");
     var font = Number(font);
     useFont(font);
 });
 
 function setFont(font) {
     if (typeof font !== "number") return;
-    window.localStorage.setItem("font", font);
+    window.localStorage.setItem("notemouseFont", font);
     useFont(font);
 }
 

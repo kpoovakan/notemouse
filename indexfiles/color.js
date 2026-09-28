@@ -13,13 +13,13 @@ const lightMode = [
 const stylesheet = document.documentElement.style;
 
 window.addEventListener("load", function() {
-    var theme = window.localStorage.getItem("theme");
+    var theme = window.localStorage.getItem("notemouseTheme");
     useTheme(theme);
 });
 
 function setTheme(theme) {
     if (typeof theme !== "string") return;
-    window.localStorage.setItem("theme", theme);
+    window.localStorage.setItem("notemouseTheme", theme);
     useTheme(theme);
 }
 
