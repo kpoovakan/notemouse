@@ -34,6 +34,7 @@ document.addEventListener("keydown", function(e) {
     if (e.key.toLowerCase() === "a") {
         e.preventDefault();
         window.localStorage.setItem("notemouse", textarea.innerHTML);
+        document.getElementById("changes").innerHTML = "changes saved!";
     }
     if (e.key.toLowerCase() === "q") {
         e.preventDefault();
@@ -77,4 +78,8 @@ function hideCommands() {
 }
 function showCommands() {
     document.getElementById("help").style.display = "block";
+}
+
+function changesNotSaved() {
+    document.getElementById("changes").innerHTML = "CTRL+A to save your changes";
 }
