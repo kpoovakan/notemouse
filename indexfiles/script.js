@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     commandsSeen = Number(commandsSeen);
     if (commandsSeen !== 1) {
         window.localStorage.setItem("notemouseCommands", 1);
-        document.getElementById("help").showModal();
+        showCommands();
     }
 
     const localText = window.localStorage.getItem("notemouse");
@@ -37,11 +37,11 @@ document.addEventListener("keydown", function(e) {
     }
     if (e.key.toLowerCase() === "q") {
         e.preventDefault();
-        const dialog = document.getElementById("help");
-        if (dialog.open) {
-            dialog.close();
+        const commands = document.getElementById("help");
+        if (commands.style.display == "block") {
+            hideCommands();
         } else {
-            dialog.showModal();
+            showCommands();
         }
     }
     if (e.key.toLowerCase() === "y") {
@@ -70,4 +70,11 @@ function downloadAsFile(content, filename, contentType = "text/plain") {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(blobUrl);
+}
+
+function hideCommands() {
+    document.getElementById("help").style.display = "none";
+}
+function showCommands() {
+    document.getElementById("help").style.display = "block";
 }

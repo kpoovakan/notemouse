@@ -20,26 +20,27 @@
                     <a href="/">kpoovakan.github.io</a>
                 <br>CTRL+Q for commands</p>
             </div>
-            <div>
+            <div class="middle">
                 <p class="textarea" id="textarea" data-placeholder="Start typing..." contenteditable="true" onfocusout="focus()" autofocus></p>
+                <div class="help" id="help" style="display: none;">
+                    <h2>Commands</h2>
+                    <p>CTRL+Q⠀⠀⠀show or hide this commands panel</p>
+                    <p>CTRL+S⠀⠀⠀download as .md file</p>
+                    <p>CTRL+A⠀⠀⠀save to localStorage</p>
+                    <p>CTRL+Z⠀⠀⠀undo text you just typed</p>
+                    <p>CTRL+F⠀⠀⠀find a portion of text</p>
+                    <p>CTRL+V⠀⠀⠀paste text from clipboard</p>
+                    <p>CTRL+C⠀⠀⠀copy highlighted text to clipboard</p>
+                    <p>SHIFT+ARROWS⠀⠀⠀highlight a portion of text</p>
+                    <p>ARROWS⠀⠀⠀scroll through text</p>
+                    <p>CTRL+Y⠀⠀⠀switch to dark or light mode</p>
+                </div>
             </div>
             <!--<div class="buttons">
                 <button onclick="bold()">bold</button>
                 <button onclick="italic()">italic</button>
                 <button onclick="underline()">underline</button>
             </div>-->
-            <dialog class="help" id="help">
-                <h1>Notemouse Commands</h1>
-                <p>CTRL+Q⠀⠀⠀show or hide this commands panel</p>
-                <p>CTRL+S⠀⠀⠀download as .md file</p>
-                <p>CTRL+A⠀⠀⠀save to localStorage</p>
-                <p>CTRL+Z⠀⠀⠀undo text you just typed</p>
-                <p>CTRL+F⠀⠀⠀find a portion of text</p>
-                <p>CTRL+V⠀⠀⠀paste text from clipboard</p>
-                <p>CTRL+C⠀⠀⠀copy highlighted text to clipboard</p>
-                <p>SHIFT+ARROWS⠀⠀⠀highlight a portion of text</p>
-                <p>CTRL+Y⠀⠀⠀switch to dark or light mode</p>
-            </dialog>
         </div>
     </body>
 </html>

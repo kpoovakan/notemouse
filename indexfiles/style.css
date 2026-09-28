@@ -33,6 +33,10 @@ body {
     pointer-events: none;
     color: color-mix(in oklab, #ffffff00 50%, var(--colorForeground));
 }
+.middle {
+    display: flex;
+    gap: 71px;
+}
 
 h1 {
     font-size: 6vh;
@@ -77,14 +81,15 @@ h1 {
     color: var(--colorBackground);
     cursor: pointer;
 }
-dialog {
-    width: 90vw;
-    height: 90vh;
+.help {
+    width: 31vw;
+    height: 100%;
     background-color: var(--colorBackground);
     color: var(--colorForeground);
     outline: none;
     border: none;
     border-radius: 3px;
+    font-size: 1.0314cqw;
 }
 dialog::backdrop {
     background-color: color-mix(in oklab, #00000000 50%, var(--colorForeground));
