@@ -7,6 +7,13 @@ window.addEventListener("load", function() {
     textarea.innerHTML = localText;
 });
 
+document.addEventListener("focusin", (e) => {
+    if (e.target !== textarea) {
+        e.stopImmediatePropagation();
+        textarea.focus();
+    }
+}, true);
+
 document.addEventListener("keydown", function(e) {
     if (!(e.ctrlKey || e.metaKey)) return;
     if (e.key.toLowerCase() === "s") {
