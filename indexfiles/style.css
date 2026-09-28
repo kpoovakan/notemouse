@@ -1,5 +1,9 @@
 :root {
-    --colorBackground: #ffffff;
-    --colorForeground: #000000;
-    --colorAccent: #808080;
+    --colorBackground: #EBEBEB;
+    --colorForeground: #1F1F1F;
+    --colorAccent: #523500;
+}
+body {
+    background-color: var(--colorBackground);
+    color: var(--colorForeground);
 }
