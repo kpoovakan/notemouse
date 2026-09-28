@@ -2,6 +2,13 @@
 const textarea = document.getElementById("textarea");
 
 window.addEventListener("load", function() {
+    let commandsSeen = window.localStorage.getItem("notemouseCommands");
+    commandsSeen = Number(commandsSeen);
+    if (commandsSeen !== 1) {
+        window.localStorage.setItem("notemouseCommands", 1);
+        document.getElementById("help").showModal();
+    }
+
     const localText = window.localStorage.getItem("notemouse");
     if (localText == null || localText == undefined || localText == "" || localText == "<br>") return;
     textarea.innerHTML = localText;

@@ -55,6 +55,7 @@ h1 {
     padding: 13px;
     border-radius: 3px;
     background-color: var(--colorBackground);
+    text-align: right;
 }
 .buttons {
     width: 100%;
