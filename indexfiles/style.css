@@ -76,3 +76,16 @@ h1 {
     color: var(--colorBackground);
     cursor: pointer;
 }
+dialog {
+    width: 90vw;
+    height: 90vh;
+    background-color: var(--colorBackground);
+    color: var(--colorForeground);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+dialog::backdrop {
+    background-color: color-mix(in oklab, #00000000 50%, var(--colorForeground));
+    backdrop-filter: blur(3px);
+}

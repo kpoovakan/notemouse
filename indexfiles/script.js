@@ -18,6 +18,26 @@ document.addEventListener("keydown", function(e) {
         e.preventDefault();
         window.localStorage.setItem("notemouse", textarea.innerHTML);
     }
+    if (e.key.toLowerCase() === "q") {
+        e.preventDefault();
+        const dialog = document.getElementById("help");
+        if (dialog.open) {
+            dialog.close();
+        } else {
+            dialog.showModal();
+        }
+    }
+    if (e.key.toLowerCase() === "y") {
+        e.preventDefault();
+        let current = window.localStorage.getItem("notemouseTheme");
+        if (current == "dark") {
+            setTheme("light")
+        } else if (current == "light") {
+            setTheme("dark")
+        } else {
+            setTheme("light")
+        }
+    }
 });
 
 function downloadAsFile(content, filename, contentType = "text/plain") {
