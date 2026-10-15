@@ -15,6 +15,7 @@ body {
     display: block;
     box-sizing: border-box;
     cursor: none !important;
+    overflow: hidden;
 }
 .textarea {
     background-color: var(--colorBackground);
@@ -96,4 +97,20 @@ h1 {
 dialog::backdrop {
     background-color: color-mix(in oklab, #00000000 50%, var(--colorForeground));
     backdrop-filter: blur(3px);
+}
+
+
+.tabbed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: var(--colorForeground);
+    opacity: 0;
+    z-index: 3141592;
+    pointer-events: auto;
 }
