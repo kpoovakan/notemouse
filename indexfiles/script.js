@@ -23,6 +23,9 @@ document.addEventListener("focusin", (e) => {
 document.addEventListener("click", function() {
     textarea.focus();
 });
+window.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+});
 
 document.addEventListener("keydown", function(e) {
     if (!(e.ctrlKey || e.metaKey)) return;
