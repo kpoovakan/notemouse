@@ -1,6 +1,11 @@
 # notemouse
 notemouse a mouse-less notepad, fully operatable through just your keyboard. no mouse needed!
 
+### demo
+use notemouse [here](https://kpoovakan.github.io/notemouse/).  
+  
+<img src="indexfiles/demo.png" width="100%" alt="preview of notemouse demo" />
+
 ### commands
 | keyboard shortcut | result |
 | :---------------: | -----: |
